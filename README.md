@@ -33,6 +33,28 @@ All the datasets have been passed through different pre-trained models to extrac
 7. Toxicity from Perspective API: for the toxic and answer turns. API available at https://developers.perspectiveapi.com/s/about-the-api8. 
 
 
+# Statistics training dataset
+
+| Dataset                    | MovieDIC          |    Cornell      |      Twitter          |     Reddit          |
+|----------------------------|-------------------|-----------------|-----------------------|---------------------|
+| No. Turns                  | 3359              |                 | 74093                 |  32977              |
+| Avg. turn length toxic     | 16.3              |                 | 15.5                  |  24.1               |
+| Avg. turn length answer    | 9.3               |                 | 11.7                  |  15.8               |
+| Avg. humour toxic          | 0.95              |                 | 0.92                  |  0.95               |
+| Avg. humour answer         | 0.78              |                 | 0.81                  |  0.85               |
+| Avg. sarcasm toxic         | 0.53              |                 | 0.61                  |  0.62               |
+| Avg. sarcasm answer        | 0.45              |                 | 0.51                  |  0.54               |
+| Avg. contradiction (NLI)   | 0.41              |                 | 0.31                  |  0.26               |
+| Avg. neutral (NLI)         | 0.55              |                 | 0.66                  |  0.72               |
+| Avg. entailment (NLI)      | 0.03              |                 | 0.03                  |  0.03               |
+| Major emotion toxic        | Anger (38.7%)     |                 | Anger (35.2%)         |  Anger (33.7%)      |
+| Major emotion answer       | Neutral (62.4%)   |                 | Happiness (29.3%)     |  Neutral (28.4%)    |
+| Avg. Perspective toxic     | 0.79              |                 |                       |                     |
+| Avg. Perspective answer    | 0.15              |                 |                       |                     |
+
+
+
+
 # References:
 - Annamoradnejad, I., & Zoghi, G. (2020). Colbert: Using bert sentence embedding for humor detection. arXiv preprint arXiv:2004.12765.
 - Banchs, R. E. (2012, July). Movie-DiC: a movie dialogue corpus for research and development. In Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) (pp. 203-207).
