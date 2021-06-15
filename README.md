@@ -37,20 +37,40 @@ All the datasets have been passed through different pre-trained models to extrac
 
 | Dataset                    | MovieDIC          |    Cornell      |      Twitter          |     Reddit          |
 |----------------------------|-------------------|-----------------|-----------------------|---------------------|
-| No. Turns                  | 3359              |                 | 74093                 |  32977              |
-| Avg. turn length toxic     | 16.3              |                 | 15.5                  |  24.1               |
-| Avg. turn length answer    | 9.3               |                 | 11.7                  |  15.8               |
-| Avg. humour toxic          | 0.95              |                 | 0.92                  |  0.95               |
-| Avg. humour answer         | 0.78              |                 | 0.81                  |  0.85               |
-| Avg. sarcasm toxic         | 0.53              |                 | 0.61                  |  0.62               |
-| Avg. sarcasm answer        | 0.45              |                 | 0.51                  |  0.54               |
-| Avg. contradiction (NLI)   | 0.41              |                 | 0.31                  |  0.26               |
-| Avg. neutral (NLI)         | 0.55              |                 | 0.66                  |  0.72               |
-| Avg. entailment (NLI)      | 0.03              |                 | 0.03                  |  0.03               |
-| Major emotion toxic        | Anger (38.7%)     |                 | Anger (35.2%)         |  Anger (33.7%)      |
-| Major emotion answer       | Neutral (62.4%)   |                 | Happiness (29.3%)     |  Neutral (28.4%)    |
-| Avg. Perspective toxic     | 0.79              |                 |                       |                     |
-| Avg. Perspective answer    | 0.15              |                 |                       |                     |
+| No. Turns                  | 3359              |    1829         | 74093                 |  32977              |
+| Avg. turn length toxic     | 16.3              |    17.3         | 15.5                  |  24.1               |
+| Avg. turn length answer    | 9.3               |    9.5          | 11.7                  |  15.8               |
+| Avg. humour toxic          | 0.95              |    0.95         | 0.92                  |  0.95               |
+| Avg. humour answer         | 0.78              |    0.79         | 0.81                  |  0.85               |
+| Avg. sarcasm toxic         | 0.53              |    0.53         | 0.61                  |  0.62               |
+| Avg. sarcasm answer        | 0.45              |    0.44         | 0.51                  |  0.54               |
+| Avg. contradiction (NLI)   | 0.41              |    0.41         | 0.31                  |  0.26               |
+| Avg. neutral (NLI)         | 0.55              |    0.55         | 0.66                  |  0.72               |
+| Avg. entailment (NLI)      | 0.03              |    0.04         | 0.03                  |  0.03               |
+| Major emotion toxic        | Anger (38.7%)     | Anger (37.8%)   | Anger (35.2%)         |  Anger (33.7%)      |
+| Major emotion answer       | Neutral (62.4%)   | Neutral (61.2%) | Happiness (29.3%)     |  Neutral (28.4%)    |
+| Avg. Perspective toxic     | 0.79              |    0.77         |                       |                     |
+| Avg. Perspective answer    | 0.15              |    0.15         |                       |                     |
+
+
+# Statistics dev dataset
+
+| Dataset                    | MovieDIC          |    Cornell      |      Twitter          |     Reddit          |
+|----------------------------|-------------------|-----------------|-----------------------|---------------------|
+| No. Turns                  | 720               |    392          | 15877                 |  7066               |
+| Avg. turn length toxic     | 16.3              |    17.5         | 15.5                  |  24.1               |
+| Avg. turn length answer    | 9.5               |    9.4          | 11.8                  |  15.8               |
+| Avg. humour toxic          | 0.94              |    0.95         | 0.92                  |  0.95               |
+| Avg. humour answer         | 0.78              |    0.80         | 0.81                  |  0.85               |
+| Avg. sarcasm toxic         | 0.55              |    0.53         | 0.62                  |  0.63               |
+| Avg. sarcasm answer        | 0.45              |    0.45         | 0.51                  |  0.53               |
+| Avg. contradiction (NLI)   | 0.44              |    0.42         | 0.31                  |  0.26               |
+| Avg. neutral (NLI)         | 0.51              |    0.53         | 0.66                  |  0.71               |
+| Avg. entailment (NLI)      | 0.04              |    0.05         | 0.03                  |  0.03               |
+| Major emotion toxic        | Anger (40.8%)     | Anger (37.0%)   | Anger (35.9%)         |  Anger (33.9%)      |
+| Major emotion answer       | Neutral (61.5%)   | Neutral (65.0%) | Happiness (29.4%)     |  Neutral (14.9%)    |
+| Avg. Perspective toxic     | 0.80              |    0.77         |                       |                     |
+| Avg. Perspective answer    | 0.16              |    0.14         |                       |                     |
 
 
 
@@ -68,7 +88,7 @@ All the datasets have been passed through different pre-trained models to extrac
 
 
 # Organizers
-- Luis F. D'Haro (Universidad Politécnica de Madrid, Spain)
+- Luis Fernando D'Haro (Universidad Politécnica de Madrid, Spain)
 - João Sedoc (New York University, USA)
 - Chen Zhang (National University of Singapore, Singapore)
 - Rafael Banchs (Intapp Inc., USA)
