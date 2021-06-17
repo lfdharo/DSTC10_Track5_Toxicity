@@ -73,6 +73,17 @@ All the datasets have been passed through different pre-trained models to extrac
 | Avg. Perspective answer    | 0.16              |    0.14         |                       |                     |
 
 
+# Submission
+
+Participants are expected to take the NRE columns (both the toxic and answer) and train systems that learn to generate polite and appropriated answers to the toxic comments. 
+The NRE columns will be the ones used for evaluating the submitted systems.
+We ask participants to use the NRE columns since it contain tokenized text using Spacy, as well as recognized named-entities replaced with labels to keep the portability and robustness of the proposed systems. 
+
+Participants may use the different columns to filter the provided data. Besides, participants can add new features to allow them for a better selection of the answers that their systems will be using for learning good answers.
+
+Submitted systems will be requested to provide the ID of the toxic comment and the generated answer which must be tokenized and with the replaced name-entities.
+
+Please subscribe to this repository to keep track of changes in the data, metrics, baselines, etc.
 
 
 # References:
