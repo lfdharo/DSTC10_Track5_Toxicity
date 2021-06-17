@@ -111,6 +111,10 @@ if 'ner' in args.features or args.features == "all":
     if 'answer_ner' not in df_out.columns or 'toxic_ner' not in df_out.columns:
         import stanza
         stanza.download('en')
+
+        import spacy
+        nlp = spacy.load("en_core_web_trf")
+
         max_entities_per_phrase = 2 # Max number of entites per phrase allowed, if not sentence is removed
         nlp = stanza.Pipeline(lang='en', processors='tokenize, ner')            
         for t in ['toxic', 'answer']:
@@ -168,6 +172,8 @@ if 'ner' in args.features or args.features == "all":
                                 new_sentence = new_sentence + ' ' + token.text  
                             end_char = int(token.misc.split('|')[1].split('=')[1])
                 if num_entities_phrase < max_entities_per_phrase:
+                    doc = nlp(new_sentence)
+                    new_sentence = ' '.join([token.text for token in doc])
                     post_processed_sent.append(new_sentence)
                 else:
                     post_processed_sent.append("N.A.")
@@ -252,7 +258,7 @@ if 'nli' in args.features or args.features == "all":
         for i, r in tqdm(df_out.iterrows()):
             inputs = tokenizer('[CLS]' + r['toxic'] + '[SEP] ' + r['answer'] + '[SEP]', return_tensors="pt")
             outputs = model(**inputs)
-            scores = outputs[0].softmax(dim=-1).detach().numpy()[0]
+            scores = outputs.logits.softmax(dim=-1).detach().numpy()[0]
             contradiction.append(scores[0])
             neutral.append(scores[1])
             entailment.append(scores[2])
