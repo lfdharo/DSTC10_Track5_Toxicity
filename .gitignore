@@ -130,3 +130,5 @@ dmypy.json
 data/
 scripts/runs
 scripts/*output
+scripts/*log
+scripts/*out
