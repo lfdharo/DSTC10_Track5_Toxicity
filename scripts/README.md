@@ -10,7 +10,7 @@
 
 ### Input data format for fine-tuning gpt-2
 
-prepare your training data in the following format:
+Prepare your training data in the following format:
 
 ```
 [CLS]your prompt text[SEP]the corresponding response<|endoftext|>
