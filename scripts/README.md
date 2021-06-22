@@ -16,6 +16,8 @@ Prepare your training data in the following format:
 [CLS]your prompt text[SEP]the corresponding response<|endoftext|>
 ```
 
+The fine-tuned checkpoint of the baseline can be found at https://drive.google.com/file/d/1At9UJ9VOF1F2KCafLFYQqe_avoesFI2Y/view?usp=sharing
+
 ### 1. Fine-tune gpt-2 model
 ```
 #!/bin/bash                                                                                                                                                                                                    
@@ -51,5 +53,3 @@ python3 run_generation.py \
     --temperature 1.0 \
     --stop_token "<|endoftext|>"
 ```
-
-The fine-tuned checkpoint of the baseline can be found at https://drive.google.com/file/d/1At9UJ9VOF1F2KCafLFYQqe_avoesFI2Y/view?usp=sharing
