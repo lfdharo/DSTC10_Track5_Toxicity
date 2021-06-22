@@ -51,3 +51,5 @@ python3 run_generation.py \
     --temperature 1.0 \
     --stop_token "<|endoftext|>"
 ```
+
+The fine-tuned checkpoint of the baseline can be found at https://drive.google.com/file/d/1At9UJ9VOF1F2KCafLFYQqe_avoesFI2Y/view?usp=sharing
