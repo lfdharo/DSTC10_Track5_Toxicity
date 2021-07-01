@@ -30,7 +30,7 @@ python3 run_lm_finetuning.py \
     --do_eval \
     --train_data_file ../data/train.txt \
     --eval_data_file ../data/dev.txt \
-    --output_dir gpt2_output \
+    --output_dir baseline_dstc10.2 \
     --line_by_line \
     --per_gpu_train_batch_size=4 \
     --per_gpu_eval_batch_size=4 \
@@ -46,7 +46,7 @@ PROMPT="[CLS]your prompt text[SEP]"
 
 python3 run_generation.py \
     --model_type gpt2 \
-    --model_name_or_path gpt2_output \
+    --model_name_or_path baseline_dstc10.2 \
     --prompt "${PROMPT}" \
     --num_return_sequences 3 \
     --length 200 \
