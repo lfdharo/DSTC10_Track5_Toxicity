@@ -69,8 +69,8 @@ All the datasets have been passed through different pre-trained models to extrac
 | Avg. entailment (NLI)      | 0.04              |    0.05         | 0.03                  |  0.03               |
 | Major emotion toxic        | Anger (40.8%)     | Anger (37.0%)   | Anger (35.9%)         |  Anger (33.9%)      |
 | Major emotion answer       | Neutral (61.5%)   | Neutral (65.0%) | Happiness (29.4%)     |  Neutral (14.9%)    |
-| Avg. Perspective toxic     | 0.80              |    0.77         | 0.80                  |                     |
-| Avg. Perspective answer    | 0.16              |    0.14         | 0.22                  |                     |
+| Avg. Perspective toxic     | 0.80              |    0.77         | 0.80                  |  0.80               |
+| Avg. Perspective answer    | 0.16              |    0.14         | 0.22                  |  0.16               |
 
 
 # Submission
