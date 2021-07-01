@@ -8,6 +8,9 @@
 
 ## Instructions to Run the Baseline
 
+A zip file with a pretrained model can be found in the following link: https://drive.google.com/file/d/1At9UJ9VOF1F2KCafLFYQqe_avoesFI2Y/view?usp=sharing. However, instructions are given below to train and fine-tune your own baseline generator.
+
+
 ### Input data format for fine-tuning gpt-2
 
 Prepare your training data in the following format:
@@ -15,8 +18,6 @@ Prepare your training data in the following format:
 ```
 [CLS]your prompt text[SEP]the corresponding response<|endoftext|>
 ```
-
-The fine-tuned checkpoint of the baseline can be found at https://drive.google.com/file/d/1At9UJ9VOF1F2KCafLFYQqe_avoesFI2Y/view?usp=sharing
 
 ### 1. Fine-tune gpt-2 model
 ```
