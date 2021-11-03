@@ -73,6 +73,27 @@ All the datasets have been passed through different pre-trained models to extrac
 | Avg. Perspective answer    | 0.16              |    0.14         | 0.22                  |  0.16               |
 
 
+# Statistics test dataset
+
+| Dataset                    | MovieDIC          |    Cornell      |      Twitter          |     Reddit          |
+|----------------------------|-------------------|-----------------|-----------------------|---------------------|
+| No. Turns                  | 1822              |  995            | 15879                 | 7067                |
+| Avg. turn length toxic     | 20.6              |  15.3           | 15.5                  | 24.0                |
+| Avg. turn length answer    | 9.1               |  8.7            | 11.6                  | 15.7                |
+| Avg. humour toxic          | 0.96              |  0.92           | 0.92                  | 0.95                |
+| Avg. humour answer         | 0.78              |  0.77           | 0.80                  | 0.84                |
+| Avg. sarcasm toxic         | 0.51              |  0.53           | 0.61                  | 0.61                |
+| Avg. sarcasm answer        | 0.42              |  0.44           | 0.51                  | 0.53                |
+| Avg. contradiction (NLI)   | 0.41              |  0.41           | 0.32                  | 0.26                |
+| Avg. neutral (NLI)         | 0.55              |  0.54           | 0.66                  | 0.72                |
+| Avg. entailment (NLI)      | 0.05              |  0.05           | 0.02                  | 0.03                |
+| Major emotion toxic        | Anger (36.3%)     |  Neutral (39.1%)| Anger (35.7%)         | Anger (34.5%)       |
+| Major emotion answer       | Neutral (57.1%)   |  Neutral (63.8%)| Happiness (29.7%)     | Neutral (28.3%)     |
+| Avg. Perspective toxic     | 0.79              |  0.65           | 0.81                  | 0.80                |
+| Avg. Perspective answer    | 0.15              |  0.14           | 0.22                  | 0.16                |
+
+
+
 # Submission
 
 Participants are expected to take the NRE columns (both the toxic and answer) and train systems that learn to generate polite and appropriated answers to the toxic comments. 
@@ -84,6 +105,20 @@ Participants may use the different columns to filter the provided data. Besides,
 Submitted systems will be requested to provide the ID of the toxic comment and the generated answer which must be tokenized and with the replaced name-entities.
 
 Please subscribe to this repository to keep track of changes in the data, metrics, baselines, etc.
+
+# Citation
+
+If you use this data or the baseline model, please cite our paper:
+
+@article{zhang2021auteval,
+      title={"Automatic Evaluation and Moderation of Open-domain Dialogue Systems},
+      author={Zhang Chen and João Sedoc and Luis Fernando D’Haro and Rafael Banchs and Alexander Rudnicky},
+      year={2021},
+      journal={arXiv},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
 
 
 # References:
