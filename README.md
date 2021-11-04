@@ -108,16 +108,16 @@ Please subscribe to this repository to keep track of changes in the data, metric
 
 # Citation
 
-If you use this data or the baseline model, please cite our paper:
+If you use this data or the baseline model, please cite our [paper](http://arxiv.org/abs/2111.02110):
 
-@article{zhang2021auteval,
-      title={"Automatic Evaluation and Moderation of Open-domain Dialogue Systems},
-      author={Zhang Chen and João Sedoc and Luis Fernando D’Haro and Rafael Banchs and Alexander Rudnicky},
-      year={2021},
-      journal={arXiv},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+> @article{zhang2021auteval,
+>      title={"Automatic Evaluation and Moderation of Open-domain Dialogue Systems},
+>      author={Zhang Chen and João Sedoc and Luis Fernando D’Haro and Rafael Banchs and Alexander Rudnicky},
+>      year={2021},
+>      eprint={2111.02110},
+>      archivePrefix={arXiv},
+>      primaryClass={cs.CL}
+>}
 
 
 
